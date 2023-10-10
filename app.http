@@ -1,0 +1,44 @@
+GET http://localhost:3000/details/1/
+Content-Type: application/json 
+
+###
+
+
+PUT http://localhost:3000/update/ 
+Authorization: bearer jwtToken
+Content-Type: application/json 
+
+{
+    "userName": "first User",
+    "userEmail": "sampleemail@facebok.com",
+    "userPassword": "zyxw",
+    "user_image": "imageUrl",
+    "total_orders": 10,
+}
+
+
+###
+
+GET http://localhost:3000/image/1/
+Content-Type: application/json 
+
+###
+
+POST http://localhost:3000/insert/
+Authorization: bearer jwtToken
+Content-Type: application/json 
+
+{
+    "userName": "first User.1",
+    "userEmail": "sampleemail@facebok.com",
+    "userPassword": "zyxw",
+    "user_image": "imageUrl",
+    "total_orders": 11,
+}
+
+
+
+###
+
+DELETE http://localhost:3000/delete/1/
+Content-Type: application/json
